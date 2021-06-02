@@ -1,0 +1,200 @@
+    body {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        background-image: url("images/bg-intro-mobile.png");
+        background-color: #ff7a7a;
+        text-align: center;
+    }
+    
+    h1 {
+        color: #ffffff;
+        font-size: 1.5em;
+        margin: 0 20px;
+        line-height: 1.4;
+    }
+    
+    p {
+        color: #ffffff;
+    }
+    
+    input {
+        margin-bottom: 20px;
+        padding: 15px 110px 15px 10px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 0.8em;
+        border-radius: 5px;
+        border: 1px solid rgb(185, 182, 211, 0.4);
+        color: #3e3c49;
+    }
+    
+    input:focus {
+        outline-color: #6055a5;
+    }
+    
+    button {
+        background-color: #38cc8c;
+        padding: 20px 65px 15px;
+        border-radius: 5px;
+        border: none;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 600;
+        box-shadow: 0px 5px 0px 0px rgb(46 166 114 / 90%);
+    }
+    
+    button:hover {
+        background-color: #40E89F;
+    }
+    
+    footer p {
+        font-size: 0.6em;
+        color: #ffffff;
+    }
+    
+    a {
+        color: #6055a5;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: #38cc8c;
+    }
+    
+    .main-container {
+        margin: 70px auto 50px;
+        width: 340px;
+    }
+    
+    .text p {
+        margin: 20px 30px 50px;
+        font-size: 0.9em;
+    }
+    
+    .offer {
+        font-size: 0.9em;
+        background-color: #6055a5;
+        padding: 15px 70px;
+        border-radius: 10px;
+        box-shadow: 0px 7px 1px 0px rgb(0 0 0 / 15%);
+        margin-bottom: 30px;
+    }
+    
+    .form-input {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 7px 1px 0px rgb(0 0 0 / 15%);
+        padding: 20px;
+    }
+    
+    .form-input p {
+        color: #b9b6d3;
+        font-size: 0.6em;
+        padding: 10px 40px 0;
+    }
+    
+    .inactive {
+        display: none;
+    }
+    
+    .error-first p,
+    .error-last p,
+    .error-email p,
+    .error-password p {
+        color: #ff7a7a;
+        font-style: italic;
+        font-weight: 600;
+        position: relative;
+        top: 70px;
+        left: 60px;
+    }
+    
+    form img {
+        position: relative;
+        right: 15px;
+        top: 35px;
+    }
+    
+    .active-border {
+        border: 2px solid #ff7a7a;
+        margin-bottom: 0;
+        color: #ff7a7a;
+    }
+    
+    .active {
+        display: flex;
+        align-items: center;
+        float: right;
+        position: relative;
+        bottom: 85px;
+    }
+    
+    @media (min-width: 1200px) {
+        body {
+            background-image: url("images/bg-intro-desktop.png");
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-color: #ff7a7a;
+        }
+        h1 {
+            font-size: 2.8em;
+            margin: 0;
+        }
+        .main-container {
+            width: 80%;
+        }
+        .text {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            text-align: left;
+            float: left;
+            top: 150px;
+            position: relative;
+        }
+        .text p {
+            margin: 0;
+        }
+        .subscription {
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            float: right;
+        }
+        .offer {
+            margin-bottom: 20px;
+        }
+        .active {
+            right: 90px;
+        }
+    }
+    
+    @media (min-width: 1400px) {
+        input {
+            padding: 15px 200px 15px 10px;
+        }
+        button {
+            padding: 20px 110px 15px;
+        }
+        .main-container {
+            width: 70%;
+        }
+        .text {
+            width: 450px;
+        }
+        .error-first p,
+        .error-last p,
+        .error-email p,
+        .error-password p {
+            left: 0;
+            top: 90px;
+        }
+        form img {
+            right: 60px;
+            top: 55px;
+        }
+        .active {
+            right: 0;
+            bottom: 105px;
+        }
+    }

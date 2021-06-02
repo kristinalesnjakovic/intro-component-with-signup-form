@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Frontend Menotor | Signup Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon-32x32.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="text">
+            <h1>Learn to code by watching others</h1>
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+        </div>
+        <div class="subscription">
+            <p class="offer"><span style="font-weight: 600;">Try it free 7 days</span> then $20/mo. thereafter</p>
+            <div class="form-input">
+                <form name="MyForm">
+                    <input type="text" name="first" placeholder="First Name" class="first-name">
+                    <div class=" inactive error-first">
+                        <p>First Name cannot be empty</p>
+                        <img src="images/icon-error.svg" alt="">
+                    </div>
+                    <input type="text" name="last" placeholder="Last Name" class="last-name">
+                    <div class="inactive error-last">
+                        <p>Last Name cannot be empty</p>
+                        <img src="images/icon-error.svg" alt="">
+                    </div>
+                    <input type="text" name="email" placeholder="Email Address" class="email-address">
+                    <div class=" inactive error-email">
+                        <p>Looks like this is not an email</p>
+                        <img src="images/icon-error.svg" alt="">
+                    </div>
+                    <input type="password" name="password" placeholder="Password" class="password">
+                    <div class="inactive error-password">
+                        <p>Password cannot be empty</p>
+                        <img src="images/icon-error.svg" alt="">
+                    </div>
+                </form>
+
+                <button type="submit" class="submit-button">Claim your free trial</button>
+                <p>By clicking the button, you are agreeing to our <span style="color:#ff7a7a; font-weight:600">Terms and
+                    Services</span></p>
+            </div>
+            <footer>
+                <p>Challenge by <a href="https://www.frontendmentor.io/challenges">Frontend Mentor</a> | Coded by Kristina Lesnjakovic
+                </p>
+            </footer>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
